@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      TeLlevoApp
+      <ion-icon name="car-sport"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+  <ion-card>
+    <ion-card-header>
+    <div class="boton-atras"> <ion-icon name="backspace" routerLink="/home"></ion-icon> </div>
+      <h3 class="titulo2"> Únete a nosotros</h3>
+      <div formulario> 
+
+          <ion-item>
+              <ion-label position="floating" class="text1">Nombre</ion-label>
+              <ion-input ></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating" class="text1" type>Contraseña</ion-label>
+              <ion-input  type="password"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating" class="text1">Repita Contraseña</ion-label>
+              <ion-input  type="password"></ion-input>
+          </ion-item>
+
+      <div class="boton-centrado">
+        <ion-button color="primary" [routerLink]="['/home']"> Crear Cuenta </ion-button>
+      </div>
+      </div>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
